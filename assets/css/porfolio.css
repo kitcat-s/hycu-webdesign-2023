@@ -105,6 +105,7 @@ section > article.center {
 
 section > article {
   max-width: 1080px;
+  /* gap: 2rem; */
 }
 
 section > article > figure > img {
@@ -141,7 +142,33 @@ section.contact > article > p > a {
 
 
 /* 푸터 */
+footer {
+  background-color: var(--black);
+}
+
 footer.copy > p {
   margin: 0;
   padding: 5rem 0;
+}
+
+
+@media (max-width: 500px) {
+  :root {
+    --header-height: 110px;
+  }
+
+  header > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  
+  section > article > figure {
+    order: 2;
+  }
+
+  section {
+    padding: calc(1.5 * var(--header-height)) 0;
+  }
 }
