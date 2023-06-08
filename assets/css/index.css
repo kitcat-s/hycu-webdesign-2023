@@ -1,0 +1,69 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--lightergray);
+}
+
+section {
+  background-color: white;
+  padding: 1rem;
+  height: 100vh;
+}
+
+h1 {
+  line-height: normal;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+li {
+  list-style-type: none;
+  background-color: white;
+  border: 2px solid var(--black);
+  overflow: hidden;
+}
+
+li > a {
+  /* padding: 3rem 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+li > a > div.pj-thumbnail {
+  width: 100%;
+  height: 12rem;
+  background-size: cover;
+  background-position: top;
+}
+
+li > a > div.pj-name {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-top: 1px solid var(--lightgray);
+}
+
+li > a > div.book {
+  background-image: url("https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788970599540.jpg");
+}
+
+li > a > div.character {
+  background-image: url("/hycu-webdesign-2023/assets/image/my-hero-anna-and-olaf.png");
+}
+
+li > a > div.porfolio {
+  background-image: url("/hycu-webdesign-2023/assets/image/portfolio-main.jpg")
+}
